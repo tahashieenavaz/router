@@ -42,6 +42,10 @@ class Router {
 
         foreach($routePatterns as $index => $routePattern) {
             $routePattern = trim($routePattern, '/');
+
+            if( count(explode('/', $routePattern)) !== count(explode('/', $currentRoute)) )
+                continue;
+
             $routePattern = preg_replace('/{(.*?)}/', '(.*)', $routePattern);
 
             if(preg_match("%^{$routePattern}$%", $currentRoute, $matches) == 0)
