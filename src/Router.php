@@ -1,6 +1,6 @@
 <?php
 
-namespace TahaShieenavaz\MinimalRouter;
+namespace Underdash;
 
 class Router {
     private static array $routes = [
