@@ -33,6 +33,13 @@ class Router {
 
         $routePatterns = array_keys(self::$routes[$currentRequestMethod]);
 
+        usort($routePatterns, function($firstRoute, $secondRoute) {
+            $firstRoutePartCount = count(explode('/', $firstRoute));
+            $secondRoutePartCount = count(explode('/', $secondRoute));
+
+            return $secondRoutePartCount - $firstRoutePartCount;
+        });
+
         foreach($routePatterns as $index => $routePattern) {
             $routePattern = trim($routePattern, '/');
             $routePattern = preg_replace('/{(.*?)}/', '(.*)', $routePattern);
@@ -41,7 +48,13 @@ class Router {
                 continue;
 
             array_shift($matches);
-            echo call_user_func(self::$routes[$currentRequestMethod][$routePatterns[$index]], ...$matches);
+
+            echo call_user_func_array(
+                self::$routes[$currentRequestMethod][$routePatterns[$index]],
+                [...$matches]
+            );
+
+            break;
         }
     }
 }
