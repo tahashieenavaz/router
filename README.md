@@ -1,7 +1,7 @@
 # Minimal PHP Request Router
 
 Every professional web developer knows handling request routing can be a pain in the ***.
-I sometimes **wished** there could be an excessively lightweight library which handles request routing. So I wasn't forced to load Laravel or even Lumen to to so.
+I sometimes **wished** there could be an excessively lightweight library which handles request routing. So I wasn't forced to load Laravel or even Lumen to do so.
 This repository contains my solution for my own problem but I think others will find it useful too.
 
 ## Installation
