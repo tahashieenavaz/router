@@ -2,7 +2,7 @@
     "name": "tahashieenavaz/minimal-router",
     "description": "The minimal router",
     "type": "library",
-    "license": "GPLV3",
+    "license": "GPL-3.0+",
     "autoload": {
         "psr-4": {
             "TahaShieenavaz\\MinimalRouter\\": "src/"
