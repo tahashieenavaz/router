@@ -1,6 +1,13 @@
 # Minimal PHP Request Router
 
+## Installation
+
+```shell
+composer require underdash/router
+```
+
 ## Using Closures
+
 ```php
 use Underdash\Router;
 
@@ -12,6 +19,7 @@ Router::dispatch();
 ```
 
 ## Using Controllers
+
 ```php
 use Underdash\Router;
 
@@ -27,6 +35,7 @@ Router::dispatch();
 ```
 
 ## Minimal Wildcard Support
+
 ```php
 use Underdash\Router;
 
