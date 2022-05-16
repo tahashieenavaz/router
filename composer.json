@@ -5,7 +5,7 @@
     "license": "GPLV3",
     "autoload": {
         "psr-4": {
-            "Tahashieenavaz\\MinimalRouter\\": "src/"
+            "TahaShieenavaz\\MinimalRouter\\": "src/"
         }
     },
     "authors": [
