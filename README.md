@@ -1,6 +1,6 @@
 # Minimal PHP Request Router
 
-## Using closures
+## Using Closures
 ```php
 use Underdash\Router;
 
@@ -11,7 +11,7 @@ Router::get('/', function() {
 Router::dispatch();
 ```
 
-## Using controllers
+## Using Controllers
 ```php
 use Underdash\Router;
 
