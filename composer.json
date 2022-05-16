@@ -2,6 +2,7 @@
     "name": "underdash/router",
     "description": "The minimal router",
     "type": "library",
+    "keywords": ["minimal", "router", "easy", "routing", "route"],
     "license": "GPL-3.0+",
     "autoload": {
         "psr-4": {
