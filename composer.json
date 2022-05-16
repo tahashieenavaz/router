@@ -1,0 +1,19 @@
+{
+    "name": "tahashieenavaz/minimal-router",
+    "description": "The minimal router",
+    "type": "library",
+    "license": "GPLV3",
+    "autoload": {
+        "psr-4": {
+            "Tahashieenavaz\\MinimalRouter\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Taha Shieenavaz",
+            "email": "tahashieenavaz@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
