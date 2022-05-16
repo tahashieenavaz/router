@@ -53,9 +53,15 @@ class Router {
 
             array_shift($matches);
 
+            $targetCallback = self::$routes[$currentRequestMethod][$routePatterns[$index]];
+
+            if(is_string($targetCallback)) {
+                $targetCallback = explode("@", $targetCallback);
+            }
+
             echo call_user_func_array(
-                self::$routes[$currentRequestMethod][$routePatterns[$index]],
-                [...$matches]
+                $targetCallback,
+                $matches
             );
 
             break;
