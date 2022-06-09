@@ -9,7 +9,7 @@ function arg($name) {
 
 
     if( array_key_exists($name, $correctedPostParams) )
-        return $_POST[$name];
+        return $correctedPostParams[$name];
 
     if( array_key_exists($name, $_GET) )
         return $_GET[$name];
