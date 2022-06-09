@@ -1,6 +1,6 @@
 <?php
 
-function var($name) {
+function arg($name) {
     if( array_key_exists($_POST, $name) )
         return $_POST[$name];
 
