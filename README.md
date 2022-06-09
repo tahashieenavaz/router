@@ -49,3 +49,16 @@ Router::get('/user/{name}', function($name) {
 
 Router::dispatch();
 ```
+
+## Working with POST params made easy
+
+```php
+use Underdash\Router;
+
+Router::post('register', function() {
+  $name = arg('name');
+  return "Thanks for registering in our web service, {$name}";
+});
+
+Router::dispatch();
+```
