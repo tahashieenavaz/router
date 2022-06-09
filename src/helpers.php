@@ -1,7 +1,14 @@
 <?php
 
 function arg($name) {
-    if( array_key_exists($name, $_POST) )
+    $correctedPostParams = [];
+    foreach($_POST as $key => $value) {
+        $key = trim($key, '_');
+        $correctedPostParams[$key] = $value;
+    }
+
+
+    if( array_key_exists($name, $correctedPostParams) )
         return $_POST[$name];
 
     if( array_key_exists($name, $_GET) )
