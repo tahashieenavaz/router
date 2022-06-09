@@ -8,6 +8,10 @@ class Router {
         "post" => [],
     ];
 
+    /*
+     * I personally want to use "login" instead of "/login" so
+     * this small function will do the trick for me.
+     * */
     public static function preparePurePath(string $path): string
     {
         if(! str_starts_with($path, '/')) {
